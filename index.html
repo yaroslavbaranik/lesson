@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 42</title>
+    <link rel="stylesheet" href="./css/main.css">
+    
+</head>
+<body>
+
+    <script>
+        var isNewObject = confirm("Начать создание объектов?");
+
+        while (isNewObject) {
+            console.log ("----------------------------------");
+            var personObj = {};
+            personObj.name = prompt("Введите имя", "Имя");
+            personObj.surname = prompt("Введите фамилию", "Фамилия");
+            personObj.age = prompt("Введите возраст", 0);
+            console.log ("Имя: "+personObj.name+"\nФамилия: "+personObj.surname+"\nВозраст: "+personObj.age);
+            isNewObject = confirm("Создать новый объект?");
+        }
+    
+    </script>
+
+</body>
+</html>
